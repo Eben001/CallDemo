@@ -22,7 +22,7 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
 
     private lateinit var binding: FragmentSecondBinding
     val DIAL_REQUEST_CODE = 12
-    
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -71,7 +71,6 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
             }
         } else {
             // Permission has already been granted
-            //TODO: Launch the Intent to SecondActivity
             makeCall("+31231412151")
         }
 

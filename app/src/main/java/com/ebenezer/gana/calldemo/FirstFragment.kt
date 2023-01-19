@@ -78,7 +78,6 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
             }
         } else {
             // Permission has already been granted
-            //TODO: Launch the Intent to SecondActivity
             makeCall("+31231412151")
         }
 
@@ -109,6 +108,7 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:$phone"))
         startActivity(intent)
 
+        //launch a coroutine to delay the navigation of secondFragment
         lifecycleScope.launch{
             delay(1000)
             findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
