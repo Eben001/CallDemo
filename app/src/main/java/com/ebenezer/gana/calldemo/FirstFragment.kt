@@ -40,13 +40,13 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         binding.button.setOnClickListener {
             checkPermission()
 
-            TODO("""
-                Create an abstract class to implement the checking of permission and making calls
-                to avoid duplicated logic on both FirstFragment and SecondFragment 
-                or some sort of ways to avoid the code duplication(checking for permission and making the 
-                        call) on both fragments
-
-            """.trimIndent())
+//            TODO("""
+//                Create an abstract class to implement the checking of permission and making calls
+//                to avoid duplicated logic on both FirstFragment and SecondFragment
+//                or some sort of ways to avoid the code duplication(checking for permission and making the
+//                        call) on both fragments
+//
+//            """.trimIndent())
 
         }
 
